@@ -37,8 +37,18 @@ class WhatsMyMac(webapp.RequestHandler):
     path = os.path.join(os.path.dirname(__file__), 'index.html')
     self.response.out.write(template.render(path, template_values))
 
+class PostProfile(webapp.RequestHandler):
+  def post(self):
+    pass
+
+class RegisterId(webapp.RequestHandler):
+  def get(self):
+    pass
+
 def main():
-  application = webapp.WSGIApplication([('/', WhatsMyMac)],
+  application = webapp.WSGIApplication([('/', WhatsMyMac),
+                                        ('/add_data', PostProfile),
+                                        ('/register_id',RegisterId)],
                                        debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 
