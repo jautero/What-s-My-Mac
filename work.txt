@@ -3,3 +3,4 @@ date		hours	description
 2.12.2010	0.5	Had the idea to use Google App Engine and python to build simple client/server security application for Mac.
 5.12.2010	2	Created first version of client script and server using Google App Engine Weekend Project template.
 6.12.2010	0.5	Setup version control and started tracking work.
+6.12.2010	0.5	Added documentation, API description, db model.
