@@ -38,10 +38,19 @@ class WhatsMyMac(webapp.RequestHandler):
     self.response.out.write(template.render(path, template_values))
 
 class PostProfile(webapp.RequestHandler):
+  """Post data to profile.
+     parameters:
+       id	Identifier for the profile data
+       jsondata Profile data in JSON format
+  """
   def post(self):
     pass
 
 class RegisterId(webapp.RequestHandler):
+  """Register profile data id to certain user.
+     parameters:
+       id	Identifier for the profile data
+  """
   def get(self):
     pass
 
