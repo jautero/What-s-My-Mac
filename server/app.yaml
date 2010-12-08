@@ -7,5 +7,9 @@ handlers:
 - url: /static
   static_dir: static_files
 
+- url: /register_id
+  login: required
+  script: whatsmymac.py
+
 - url: /.*
   script: whatsmymac.py
